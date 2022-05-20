@@ -98,7 +98,7 @@ font-weight: 600;
   pointer-events: auto;
 }
 
- /* add o scroll a lista */
+ /* add scroll the list */
  .wrapper .todoList{
    max-height: 350px;
    overflow-y: auto;
