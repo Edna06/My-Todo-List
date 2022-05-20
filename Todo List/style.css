@@ -48,7 +48,7 @@ font-size: 30px;
 font-weight: 600;
 }
 
-/* configurações da barra */
+
 .wrapper .inputField{
   display: flex;
   height: 45px;
@@ -57,7 +57,6 @@ font-weight: 600;
 }
 
 
-/* espaço para preencher */
 .inputField input{
   outline: none;
   width: 85%;
@@ -73,7 +72,7 @@ font-weight: 600;
   border-color: #8E49E8;
 }
 
-/* configurando botão */
+/* conf button */
 .inputField button{
   width: 60px;
   height: 100%;
@@ -113,7 +112,7 @@ font-weight: 600;
    margin-bottom: 9px;
    padding: 7px 15px;
    cursor: default;
-   overflow: hidden; /* esconde o icon de trash até o mouse descansar sobre a atividade */
+   overflow: hidden; 
    word-wrap: break-word;
 
  }
