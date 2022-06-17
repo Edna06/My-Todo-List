@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Square+Peg&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+::selection{
+  color: #ffff;
+  background: rgb(142, 73, 232);
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: url(https://cdna.artstation.com/p/assets/images/images/029/114/606/original/jeremy-anninos-ahri-process-gif.gif?1596499816);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.anaglyph {
+  latter-spacing: 6px;
+  text-shadow: rgb(121, 13, 123) 0 0, cyan 0 0;
+  transition: text-shadow 200ms;
+}
+
+.anaglyph:hover {
+  text-shadow: rgb(219, 33, 200) -6px 0, cyan 6px 0;
+}
+
+.wrapper {
+  color: rgb(61, 6, 66);
+  margin: 120px auto;
+  max-width: 450px;
+  width: 100%;
+  background: linear-gradient(rgba(52, 225, 184, 0.545), #497be8d2, #8e49e8f2);
+  border-radius: 5px;
+  padding: 25px;
+  border: 1.5px solid rgb(199, 56, 194);
+}
+
+.wrapper header{
+font-size: 30px;
+font-weight: 600;
+}
+
+/* configurações da barra */
+.wrapper .inputField{
+  display: flex;
+  height: 45px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+
+/* espaço para preencher */
+.inputField input{
+  outline: none;
+  width: 85%;
+  height: 100%;
+  border: 1px solid white;
+  font-size: 17px;
+  border-radius: 3px;
+  padding-left: 15px;
+  transition: all 0.3s ease;
+ } 
+
+ .inputField input:focus{
+  border-color: #8E49E8;
+}
+
+/* configurando botão */
+.inputField button{
+  width: 60px;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: #8E49E8;
+  color: #FFF;
+  font-size: 22px;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-left: 5px;
+  opacity: 0.6;
+  pointer-events: none;
+  transition: all 0.3s ease;
+ } 
+
+ .inputField button:hover,
+.footer button:hover{
+  background: #721ce3;
+}
+.inputField button.active{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+ /* add o scroll a lista */
+ .wrapper .todoList{
+   max-height: 350px;
+   overflow-y: auto;
+ }
+ 
+ .todoList li{
+   list-style: none;
+   position: relative;
+   background: linear-gradient(rgba(52, 225, 184, 0.545),  #eaeaea);
+   border-radius: 4px;
+   margin-bottom: 9px;
+   padding: 7px 15px;
+   cursor: default;
+   overflow: hidden; /* esconde o icon de trash até o mouse descansar sobre a atividade */
+   word-wrap: break-word;
+
+ }
+
+ .todoList li .icon{
+   position: absolute;
+   right: -45px;
+   top: 50%;
+   transform: translateY(-50%);
+   color:#FFF;
+   width: 45px;
+   text-align: center;
+   padding: 10px 15px;
+   border-radius: 0 3px 3px 0;
+   background: red;
+   cursor: pointer;
+   transition: all 0.2s ease;
+ }
+
+ .todoList li:hover .icon{
+  right: 0px;
+ }
+
+ .wrapper .footer{
+   display:flex;
+   width: 100%;
+   align-items: center;
+   margin-top: 20px;
+   justify-content: space-between;
+ }
+
+ .footer button{
+  padding: 6px 10px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  font-weight: 400;
+  margin-left: 5px;
+  background: #6a32b3;
+  color: rgb(233, 233, 233);
+  font-size: 16px;
+  cursor: pointer;
+  user-select: none;
+  opacity: 0.6;
+  pointer-events: none;
+  transition: all 0.3s ease;
+ } 
+ 
+ .footer button.active{
+  opacity: 1;
+  pointer-events: auto;
+}
