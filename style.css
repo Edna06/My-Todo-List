@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: Poppins;
 }
+
 ::selection{
   color: #ffff;
   background: rgb(142, 73, 232);
