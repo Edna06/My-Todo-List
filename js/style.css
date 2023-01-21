@@ -6,16 +6,15 @@
   box-sizing: border-box;
   font-family: Poppins;
 }
-
-::selection{
+/* ::selection{
   color: #ffff;
   background: rgb(142, 73, 232);
-}
+} */
 
 body {
   height: 100vh;
   width: 100%;
-  background: url(https://cdna.artstation.com/p/assets/images/images/029/114/606/original/jeremy-anninos-ahri-process-gif.gif?1596499816);
+  background: url(./img/bgGif.gif);
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,24 +23,22 @@ body {
 }
 
 .anaglyph {
-  latter-spacing: 6px;
-  text-shadow: rgb(121, 13, 123) 0 0, cyan 0 0;
-  transition: text-shadow 200ms;
-}
+  letter-spacing: 6px;
+ 
 
-.anaglyph:hover {
-  text-shadow: rgb(219, 33, 200) -6px 0, cyan 6px 0;
+  text-shadow: rgba(231, 210, 227, 0.406) -3px 0, rgba(255, 255, 255, 0) 6px 0;
+  color: #e1e0e6f2;
 }
 
 .wrapper {
-  color: rgb(61, 6, 66);
+  color: rgba(0, 0, 0, 0.91);
   margin: 120px auto;
-  max-width: 450px;
+  max-width: 750px;
   width: 100%;
-  background: linear-gradient(rgba(52, 225, 184, 0.545), #497be8d2, #8e49e8f2);
-  border-radius: 5px;
+  background: linear-gradient(rgba(5, 34, 28, 0.545), #5b78b65e, #0b0339f2);
+  border-radius: 20px;
   padding: 25px;
-  border: 1.5px solid rgb(199, 56, 194);
+  border: 3px solid rgba(181, 173, 181, 0.135);
 }
 
 .wrapper header{
@@ -63,7 +60,8 @@ font-weight: 600;
   outline: none;
   width: 85%;
   height: 100%;
-  border: 1px solid white;
+  background: rgba(255, 255, 255, 0.749);
+  border: 1px solid rgba(8, 4, 4, 0.687);
   font-size: 17px;
   border-radius: 3px;
   padding-left: 15px;
@@ -71,7 +69,7 @@ font-weight: 600;
  } 
 
  .inputField input:focus{
-  border-color: #8E49E8;
+  border-color: #0b0339f2;
 }
 
 /* configurando botão */
@@ -80,7 +78,7 @@ font-weight: 600;
   height: 100%;
   border: none;
   outline: none;
-  background: #8E49E8;
+  background: #0b03398f;
   color: #FFF;
   font-size: 22px;
   cursor: pointer;
@@ -93,7 +91,7 @@ font-weight: 600;
 
  .inputField button:hover,
 .footer button:hover{
-  background: #721ce3;
+  background: #0b0339f2;
 }
 .inputField button.active{
   opacity: 1;
@@ -102,20 +100,20 @@ font-weight: 600;
 
  /* add o scroll a lista */
  .wrapper .todoList{
-   max-height: 350px;
+   max-height: 300px;
    overflow-y: auto;
  }
  
  .todoList li{
    list-style: none;
    position: relative;
-   background: linear-gradient(rgba(52, 225, 184, 0.545),  #eaeaea);
-   border-radius: 4px;
-   margin-bottom: 9px;
-   padding: 7px 15px;
+   background: rgba(255, 253, 253, 0.634);
+   border-radius: 2px;
+   margin: 9px;
+   padding: 10px 15px;
    cursor: default;
    overflow: hidden; /* esconde o icon de trash até o mouse descansar sobre a atividade */
-   word-wrap: break-word;
+   /* word-wrap: break-word; */
 
  }
 
@@ -129,7 +127,7 @@ font-weight: 600;
    text-align: center;
    padding: 10px 15px;
    border-radius: 0 3px 3px 0;
-   background: red;
+   background: rgb(211, 3, 3);
    cursor: pointer;
    transition: all 0.2s ease;
  }
@@ -153,7 +151,7 @@ font-weight: 600;
   outline: none;
   font-weight: 400;
   margin-left: 5px;
-  background: #6a32b3;
+  background: #0b0339f2;
   color: rgb(233, 233, 233);
   font-size: 16px;
   cursor: pointer;
@@ -166,4 +164,9 @@ font-weight: 600;
  .footer button.active{
   opacity: 1;
   pointer-events: auto;
+}
+
+.footer span {
+  color: rgba(160, 159, 159, 0.774);
+  font-size: 14px;
 }
